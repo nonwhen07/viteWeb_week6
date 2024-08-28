@@ -300,10 +300,32 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+
+//set設計稿色彩、
+$primary-100: #FFFDF5;
+$primary-200: #FFFBE5;
+$primary-300: #E8E3DA;
+$primary-400: #6E6B67;
+
+$accent-100: #E0EFDE;
+$accent-200: #569573;
+$accent-300: #406C55;
+
+$neutral-100: #F8F9FA;
+$neutral-200: #DEE2E6;
+$neutral-300: #ADB5BD;
+$neutral-400: #6C757D;
+$neutral-500: #343A40;
+
+$info: #4A72FF;
+$success: #2CC585;
+$Warning: #FFB054;
+$danger: #D65F5F;
+
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -312,6 +334,22 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+
+  "primary-100":  $primary-100,
+  "primary-100":  $primary-200,
+  "primary-100":  $primary-300,
+  "primary-100":  $primary-400,
+
+  "secondary-100":  $accent-100,
+  "secondary-200":  $accent-200,
+  "secondary-300":  $accent-300,
+
+  "gray-100":  $neutral-100,
+  "gray-200":  $neutral-200,
+  "gray-300":  $neutral-300,
+  "gray-400":  $neutral-400,
+  "gray-500":  $neutral-500,
+
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -378,7 +416,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  true !default; //rfs 改fals可關掉
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -406,15 +444,28 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-// scss-docs-start spacer-variables-maps
+// scss-docs-start spacer-variables-map
 $spacer: 1rem !default;
 $spacers: (
+  // 0: 0,
+  // 1: $spacer * .25,
+  // 2: $spacer * .5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
+
+  // 1rem 預設 16px， Gutters 的寬度為 1.5rem (24px)
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: $spacer * 0.5,
+  2: $spacer * 0.75,
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: $spacer * 1.25,
+  5: $spacer * 1.5,
+  6: $spacer * 2.25,
+  7: $spacer * 2.5,
+  8: $spacer * 3,
+  9: $spacer * 3.75,
+  10: $spacer * 5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -514,7 +565,7 @@ $container-max-widths: (
 
 // Grid columns
 //
-// Set the number of columns and specify the width of the gutters.
+// Set the number of columns and specify the width of the gutters. 
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           1.5rem !default;

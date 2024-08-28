@@ -2,6 +2,17 @@
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
 
+$utilities: map-merge(
+  $utilities, ( //那些需要響應是變動就田那些，如：font-size、border...
+    "font-size": map-merge(
+      map-get($utilities, "border"),
+      ( responsive: true ),
+    ),
+  )
+);
+@import "bootstrap/scss/utilities/api";
+
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
