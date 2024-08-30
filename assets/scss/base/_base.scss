@@ -1,0 +1,34 @@
+// body{
+// 	font-family: "Noto sans TC", sans-serif;
+//   line-height: 1.5;
+// }
+
+.lato-font{
+	font-family: "LATO", sans-serif;
+}
+
+img{
+  max-width: 100%;
+  margin: auto;
+}
+
+a{
+  //text-decoration: none;
+	display: inline-block;
+	color: inherit;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{ //設計稿上的標題 letter: 10% => letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
+}
+
+p{// 字距用em
+  letter-spacing: 0.05em;
+}
+
