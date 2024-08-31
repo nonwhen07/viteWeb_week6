@@ -1,3 +1,21 @@
-.index-title {
-  font-size: 100px;
+// .index-title {
+//   font-size: 100px;
+// }
+
+
+
+.jumbotron{
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  padding: 228px 61px;
+
+  @include pad{
+		padding: 228px 61px;
+	}
+
+  @include mobile{
+		background-image: url("../images/banner-sm.png");
+	}
+
 }

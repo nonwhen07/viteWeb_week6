@@ -10,105 +10,108 @@
     <%- include('./layout/header'); -%>
 
     <main>
+
+      <section class="container">
+        <div class=" mb-4 rounded-3 position-relative">
+          <picture>
+            <source media="(min-width: 575px)" srcset="../assets/images/banner.png">
+            <img src="../assets/images/banner-sm.png" alt="banner">
+          </picture>
+          <div class="container-fluid py-5 position-absolute top-50 translate-middle-y text-white">
+            <h3 class="fs-6 fs-lg-5">獻給新世代的生活風格誌</h3>
+            <h2 class="col-md-8 fs-3 fs-lg-1">一起探索生活的無限可能</h2>
+            <a class="btn btn-secondary-200 fs-lg-5 text-white" href="#" role="button">
+              馬上訂閱
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div> 
+      </section>
+
+
+
+
       <section class="container">
         <h2 class="index-title">熱門主題</h2>
-        <div class="row row-col-lg-4 row-col-mg-2 row-col-sm-1 gx-5 gy-5">
+        <div class="row flex-wrap row-cols-lg-4 row-cols-mg-2 row-cols-1 gx-5 gy-5">
           <!-- 父層 row-col-lg-4(後面的4不代表格線4而是代表版面平均分配4攔) + 子層 col (.col 如果不寫數值就是空間等分) = 子層 col-lg-3 * 4  -->
-          <div class="col">
+          <div class="col position-relative">
             <picture>
-              <source media="(mix-width: 992px)" srcset="../assets/images/theme-1.png">
-              <img src="../assets/images/theme-1-sm.png" alt="theme-1-sm.png" class="w-100">
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-1.png">
+              <img src="../assets/images/theme-1-sm.png" alt="城市漫遊者" class="w-100 rounded-3">
             </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>城市漫遊者</h3>
+            </div>
           </div>
-          <div class="col">
+          <div class="col position-relative">
             <picture>
-              <source media="(mix-width: 992px)" srcset="../assets/images/theme-3.png">
-              <img src="../assets/images/theme-3-sm.png" alt="">
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-3.png">
+              <img src="../assets/images/theme-3-sm.png" alt="秘境尋蹤人" class="w-100">
             </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>秘境尋蹤人</h3>
+            </div>
           </div>
-          <div class="col">
+          <div class="col position-relative">
             <picture>
-              <source media="(mix-width: 992px)" srcset="../assets/images/theme-5.png">
-              <img src="../assets/images/theme-5-sm.png" alt="">
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-5.png">
+              <img src="../assets/images/theme-5-sm.png" alt="品味設計家" class="w-100">
             </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>品味設計家</h3>
+            </div>
           </div>
-          <div class="col">
+          <div class="col position-relative">
             <picture>
-              <source media="(mix-width: 992px)" srcset="../assets/images/theme-7.png">
-              <img src="../assets/images/theme-7-sm.png" alt="">
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-7.png">
+              <img src="../assets/images/theme-7-sm.png" alt="美食探險記" class="w-100">
             </picture>
-
-
-            <div class="col">
-              <picture>
-                <source media="(mix-width: 992px)" srcset="../assets/images/theme-2.png">
-                <img src="../assets/images/theme-2-sm.png" alt="">
-              </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>美食探險記</h3>
             </div>
-            <div class="col">
-              <picture>
-                <source media="(mix-width: 992px)" srcset="../assets/images/theme-4.png">
-                <img src="../assets/images/theme-4-sm.png" alt="">
-              </picture>
+          </div>
+          <div class="col position-relative">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-2.png">
+              <img src="../assets/images/theme-2-sm.png" alt="美學建築誌" class="w-100">
+            </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>美學建築誌</h3>
             </div>
-            <div class="col">
-              <picture>
-                <source media="(mix-width: 992px)" srcset="../assets/images/theme-6.png">
-                <img src="../assets/images/theme-6-sm.png" alt="">
-              </picture>
+          </div>
+          <div class="col position-relative">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-4.png">
+              <img src="../assets/images/theme-4-sm.png" alt="慢活生活行" class="w-100">
+            </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>慢活生活行</h3>
             </div>
-            <div class="col">
-              <picture>
-                <source media="(mix-width: 992px)" srcset="../assets/images/theme-8.png">
-                <img src="../assets/images/theme-8-sm.png" alt="時尚先鋒派">
-              </picture>
+          </div>
+          <div class="col position-relative">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-6.png">
+              <img src="../assets/images/theme-6-sm.png" alt="工藝匠心賞" class="w-100">
+            </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>工藝匠心賞</h3>
             </div>
-
-
+          </div>
+          <div class="col position-relative">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/theme-8.png">
+              <img src="../assets/images/theme-8-sm.png" alt="時尚先鋒派" class="w-100">
+            </picture>
+            <div class="position-absolute top-50 start-50 translate-middle text-white">
+              <h3>時尚先鋒派</h3>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
 
-
-    <!-- <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <%- include('./layout/footer'); -%>
 
