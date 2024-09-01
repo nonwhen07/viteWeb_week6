@@ -4,18 +4,86 @@
 
 
 
-.jumbotron{
-  background-image: url("../images/banner.png");
-  background-repeat: no-repeat; 
-  background-size: cover;
-  padding: 228px 61px;
+// .jumbotron{
+//   background-image: url("../images/banner.png");
+//   background-repeat: no-repeat; 
+//   background-size: cover;
+//   padding: 228px 61px;
+
+//   @include pad{
+// 		padding: 228px 61px;
+// 	}
+
+//   @include mobile{
+// 		background-image: url("../images/banner-sm.png");
+// 	}
+
+// }
+
+// 筆記：
+// 父層 row-col-lg-4(後面的4不代表格線4，而是代表版面平均分配4攔) + 子層 col (.col 如果不寫數值就是空間等分) = 父層 row + 子層 col-lg-3 * 4
+
+.theme-card{ // 用父層的容器border改變形狀，而不是改圖片
+  border-radius: 20px 0 20px 0; /* top-left | top-right | bottom-right | bottom-left https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
+  overflow: hidden;
+  //以下用偽元素來做遮罩
+  position: relative;
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; //透明度
+    background-color: rgba($color: #212529, $alpha: 0.4);
+    transition: opacity 0.5s;
+  }
+
+  &:hover::before{
+    opacity: 1;
+  }
+
+
+  &-title{
+    font-weight: 900;
+
+    @include pad{
+			font-weight: 700;
+		}
+  }
+}
+
+.subtitle{
+  font-weight: 900;
 
   @include pad{
-		padding: 228px 61px;
-	}
+    font-weight: 700;
+  }
+}
 
-  @include mobile{
-		background-image: url("../images/banner-sm.png");
-	}
 
+.hito-content{
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 217px;
+    height: 76px;
+    left: 0;
+    bottom: 0;
+    background:url("../images/bg-1.png") ;
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 196px;
+    right: -20px;
+    bottom: 0;
+    background:url("../images/bg-2.png") ;
+  }
 }
