@@ -1,6 +1,37 @@
 // 筆記：
 // 父層 row-col-lg-4(後面的4不代表格線4，而是代表版面平均分配4攔) + 子層 col (.col 如果不寫數值就是空間等分) = 父層 row + 子層 col-lg-3 * 4
 
+
+.banner{
+  position: relative;
+
+
+  &-position{
+    position: absolute;
+    top: 50%;
+
+    text-align: left;
+
+    @include pad{
+      text-align: center;
+      // top: 75%;
+      top: auto;
+      bottom: 0%;
+    }
+  }
+}
+
+.subtitle{
+  font-weight: 900;
+
+  @include pad{
+    font-weight: 700;
+  }
+}
+
+
+
+
 .theme-card{ // 用父層的容器border改變形狀，而不是改圖片
   border-radius: 20px 0 20px 0; /* top-left | top-right | bottom-right | bottom-left https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
   overflow: hidden;
@@ -33,13 +64,8 @@
   }
 }
 
-.subtitle{
-  font-weight: 900;
 
-  @include pad{
-    font-weight: 700;
-  }
-}
+
 
 
 .hito-content{
@@ -101,12 +127,49 @@
   height: 300px;
 }
 
-.hotstag{
+.hots-tag{
+  margin-top: 16px;
+  padding: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @include pad{
+    padding: 8px;
     flex-direction: column;
   }
 }
+
+
+.life-title{
+  font-size: 52px;
+  @include pad{
+    font-size: 40px;
+  }
+
+}
+
+.life-list{
+  color: #343A40;
+  font-size: 20px;
+  font-weight: bolder;
+
+
+  @include pad{
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+
+.list-group-item-action{
+  border: 0px;
+  background-color: #fff;
+}
+
+.list-group-item-action:hover, .list-group-item-action.active{
+  background-color: #E0EFDE !important;
+  color: #212529 !important; 
+}
+
+

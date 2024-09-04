@@ -12,31 +12,32 @@
 
     <main>
 
-      <section class="container">
-        <div class="yb-10 rounded-3 position-relative">
+      <section class="container py-lg-10">
+        <div class="yb-10 rounded-3 banner">
           <picture>
             <source media="(min-width: 575px)" srcset="../assets/images/banner.png">
             <img src="../assets/images/banner-sm.png" alt="banner" class="w-100">
           </picture>
-          <div class="container-fluid px-9 py-5 position-absolute top-50 translate-middle-y text-white">
+
+
+          <div class="container-fluid px-9 py-5 banner-position translate-middle-y text-white">
             <h3 class="fs-6 fs-lg-5 subtitle">獻給新世代的生活風格誌</h3>
-            <h2 class="col-md-8 fs-3 fs-lg-1 fw-bolder mb-4">一起探索生活的無限可能</h2>
+            <h2 class="fs-3 fs-lg-1 fw-bolder mb-4">一起探索生活的無限可能</h2>
             <button type="button" class="btn btn-secondary-200 fs-lg-5 text-white">
               馬上訂閱
               <i class="bi bi-arrow-right"></i>
             </button>
           </div>
-        </div> 
 
-        
-        
+
+        </div>
       </section>
 
 
 
 
-      <section class="container py-lg-10">
-        <h2 class="fs-3 fs-lg-2 fw-bolder">熱門主題</h2>
+      <section class="container py-lg-10 py-7">
+        <h2 class="fs-3 fs-lg-2 fw-bolder mb-4">熱門主題</h2>
         <div class="row flex-wrap row-cols-lg-4 row-cols-mg-2 row-cols-1 gx-5 gy-5">
           <!-- 父層 row-col-lg-4(後面的4不代表格線4而是代表版面平均分配4攔) + 子層 col (.col 如果不寫數值就是空間等分) = 子層 col-lg-3 * 4  -->
 
@@ -210,16 +211,16 @@
       <section class="container py-lg-10">
         <h2 class="fs-3 fs-lg-2 fw-bolder mb-lg-7 mb-5">大家都在看</h2>
         <div class="row">
-          <div class="col-3 d-none d-lg-block me-5 bg-white">
-            <div class="list-group" id="list-tab" role="tablist">
-              <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">酒精路跑地圖</a>
-              <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">台北拉麵圖鑑</a>
-              <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">海島自由行</a>
-              <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">短天數出國推薦</a>
-              <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">週末露營趣 </a>
+          <div class="col-3 d-none d-lg-block me-5 bg-white p-4">
+            <div class="list-group bg-white text-gray-900 gap-4 " id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action fs-5 fw-bolder active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">‧ 酒精路跑地圖</a>
+              <a class="list-group-item list-group-item-action fs-5 fw-bolder" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">‧ 台北拉麵圖鑑</a>
+              <a class="list-group-item list-group-item-action fs-5 fw-bolder" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">‧ 海島自由行</a>
+              <a class="list-group-item list-group-item-action fs-5 fw-bolder" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">‧ 短天數出國推薦</a>
+              <a class="list-group-item list-group-item-action fs-5 fw-bolder" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">‧ 週末露營趣 </a>
             </div>
           </div>
-          <div class="col-8 bg-white">
+          <div class="col-lg-8 col-12 p-lg-10 p-3 bg-white">
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                 <h4 class="text-secondary-200  mb-lg-5 mb-2 fw-bolder">酒精路跑地圖</h4> 
@@ -231,26 +232,26 @@
                 <div class="d-flex p-3 gx-1">
                   <picture>
                     <source media="(min-width: 992px)" srcset="../assets/images/hots-1.png">
-                    <img src="../assets/images/hots-1-sm.png" alt="酒精路跑地圖-1" class="w-100 rounded-start rounded-3">
+                    <img src="../assets/images/hots-1-sm.png" alt="酒精路跑地圖-1" class="w-100  col-lg-4 col-12 rounded-start">
                   </picture>
                   <picture>
                     <source media="(min-width: 992px)" srcset="../assets/images/hots-2.png">
-                    <img src="../assets/images/hots-2-sm.png" alt="酒精路跑地圖-2" class="w-100 d-none d-lg-block">
+                    <img src="../assets/images/hots-2-sm.png" alt="酒精路跑地圖-2" class="w-100 d-none d-lg-block col-lg-4 col-12">
                   </picture>
                   <picture>
                     <source media="(min-width: 992px)" srcset="../assets/images/hots-3.png">
-                    <img src="../assets/images/hots-3-sm.png" alt="酒精路跑地圖-3" class="w-100 d-none d-lg-block">
+                    <img src="../assets/images/hots-3-sm.png" alt="酒精路跑地圖-3" class="w-100 d-none d-lg-block col-lg-4 col-12">
                   </picture>
                   <picture>
                     <source media="(min-width: 992px)" srcset="../assets/images/hots-4.png">
-                    <img src="../assets/images/hots-4-sm.png" alt="酒精路跑地圖-4" class="w-100 rounded-end rounded-3 d-none d-lg-block">
+                    <img src="../assets/images/hots-4-sm.png" alt="酒精路跑地圖-4" class="w-100 rounded-end d-none d-lg-block col-lg-4 col-12">
                   </picture>
                 </div>
 
-                <div class="hotstag">
-                  <div class="gx-lg-2 gx-1">
-                    <span class="badge text-bg-primary-300 text-primary-400 fs-lg-6 fs-5">#夜貓行程</span>
-                    <span class="badge text-bg-primary-300 text-primary-400 fs-lg-6 fs-5">##barhopping</span>
+                <div class="hots-tag">
+                  <div>
+                    <span class="badge text-bg-primary-300 text-primary-400 fs-lg-6 fs-5 me-lg-3 me-1">#夜貓行程</span>
+                    <span class="badge text-bg-primary-300 text-primary-400 fs-lg-6 fs-5 me-lg-3 me-1">#barhopping</span>
                     <span class="badge text-bg-primary-300 text-primary-400 fs-lg-6 fs-5">#全台酒吧</span>
                   </div>
                   <div class="wer">
@@ -270,14 +271,69 @@
       </section>
 
       <section class="container py-lg-10">
-        <h2 class="fs-3 fs-lg-2">品味生活</h2>
+        <h2 class="fs-3 fs-lg-2 fw-bolder mb-lg-7 mb-4">品味生活</h2>
+        <div class="row">
+
+          <div class="col-lg-4 col-12">
+            <h2 class="text-primary-400 life-title fw-bloder mb-lg-6 mb-5">食.</h2>
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/life-1.png">
+              <img src="../assets/images/life-1-sm.png" alt="食.png" class="w-100 rounded-start rounded-3">
+            </picture>
+            <ul class="row list-unstyled gy-4 life-list">
+              <li>｜米其林三星主廚的那些絕活傳奇</li>
+              <li>｜探秘成都的地道川味秘技與魅力</li>
+              <li>｜義大利釀酒師對於酒的堅持執著</li>
+            </ul>
+            <button type="button" class="btn btn-white text-secondary-200 fs-lg-5">
+              View More
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <h2 class="life-title text-primary-400 fw-bloder mb-lg-6 mb-5">藝.</h2>
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/life-2.png">
+              <img src="../assets/images/life-2-sm.png" alt="藝.png" class="w-100 rounded-start rounded-3">
+            </picture>
+            <ul class="row list-unstyled gy-4">
+              <li>｜解構教主級時裝設計大師的獨...</li>
+              <li>｜當代攝影師鏡頭中的光影離奇</li>
+              <li>｜帶你穿縮中世紀，夏季文藝復興展</li>
+            </ul>
+            <button type="button" class="btn btn-white text-secondary-200 fs-lg-5">
+              View More
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="col-lg-4 col-12">
+            <h2 class="life-title text-primary-400 fw-bloder mb-lg-6 mb-5">旅.</h2>
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/life-3.png">
+              <img src="../assets/images/life-3-sm.png" alt="旅.png" class="w-100 rounded-start rounded-3">
+            </picture>
+            <ul class="row list-unstyled gy-4">
+              <li>｜遠離喧囂,偶探巴塔哥尼亞終界</li>
+              <li>｜東京深度六區,帶你細品極簡魅力</li>
+              <li>｜專賣奇珍異寶的東歐地下夜市</li>
+            </ul>
+            <button type="button" class="btn btn-white text-secondary-200 fs-lg-5">
+              View More
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+        </div>
+
       </section>
 
       <section class="py-lg-10 bg-primary-200">
         <div class="container">
           <div class="row">
 
-            <div class="col-lg-6 col-12 py-lg-0 py-8 px-lg-0 px-6 text-lg-start text-center">
+            <div class="col-lg-6 col-12 py-lg-0 py-8 px-lg-0 px-6   d-flex flex-column justify-content-center align-items-center">
               <h3 class="fs-6 fs-lg-5 subtitle">今天又不知道要去哪裡了嗎？</h3>
               <h2 class="fs-3 fs-lg-2 fw-bolder d-none d-lg-block">Vivre 給你意想不到的生活風格提案</h2>
               <h2 class="fs-3 fs-lg-2 fw-bolder d-lg-none">Vivre</h2>
@@ -296,6 +352,13 @@
                   <h4 class="position-absolute top-0 end-50 translate-middle-y">
                     <span class="badge bg-white text-secondary-300"><i class="bi bi-play-fill"></i>人氣行程</span>
                   </h4>
+
+                  <div class="d-flex justify-content-between text-primary-100 position-absolute bottom-0 translate-middle-y">
+                    <h4 class="fs-6 fw-bolder">
+                      親子露營要帶什麼？<i class="bi bi-arrow-right"></i>
+                    </h4>
+                    <i class="bi bi-arrow-right"></i>
+                  </div>
                 </li>
                 <li class="col-lg-6 mt-lg-7 position-relative">
                   <img src="../assets/images/projects-1.png" alt="編輯推薦.png" class="w-100">
@@ -322,12 +385,12 @@
         </div>
       </section>
 
-      <section class="container py-lg-10">
+      <section class="container py-lg-10 py-8">
         <div class="row">
-          <h2 class="col-lg-6 col-12 px-0 fs-3 fs-lg-2 text-lg-start text-center">想看什麼主題由你決定！</h2>
-          <div class="col-lg-6 col-12 px-0 mb-2 text-lg-end text-center">
+          <h2 class="col-lg-6 col-12 px-0 fs-3 fs-lg-2 fw-bolder text-lg-start text-center">想看什麼主題由你決定！</h2>
+          <div class="col-lg-6 col-12 px-0 mb-2 fs-4 text-lg-end text-center">
             <p>歡迎投稿與我們分享</p>
-            <a class="btn btn-secondary-200 fs-lg-5 text-white" href="#" role="button">
+            <a class="btn btn-secondary-200 fs-lg-5 mt-lg-3 mt-6 text-white" href="#" role="button">
               聯絡我們
             </a>
           </div>
