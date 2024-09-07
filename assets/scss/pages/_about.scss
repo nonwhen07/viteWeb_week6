@@ -1,0 +1,26 @@
+
+
+.year{
+  width: 91px;
+  height: 53px;
+ padding: auto 0px;
+}
+
+.month{
+  width: 70px;
+}
+.content{
+  width: 90%;
+}
+
+
+.vision{
+  width: 66%;
+  margin: 0 auto;
+
+  @include pad{
+    width: 90%;
+    
+  }
+
+}
