@@ -5,11 +5,9 @@
 .banner{
   position: relative;
 
-
   &-position{
     position: absolute;
     top: 50%;
-
     text-align: left;
 
     @include pad{
@@ -19,18 +17,16 @@
       bottom: 0%;
     }
   }
-}
 
-.subtitle{
-  font-weight: 900;
-
-  @include pad{
-    font-weight: 700;
+  .subtitle{
+    font-weight: 900;
+  
+    @include pad{
+      font-weight: 700;
+    }
   }
+  
 }
-
-
-
 
 .theme-card{ // 用父層的容器border改變形狀，而不是改圖片
   border-radius: 20px 0 20px 0; /* top-left | top-right | bottom-right | bottom-left https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
@@ -54,7 +50,6 @@
     opacity: 1;
   }
 
-
   &-title{
     font-weight: 900;
 
@@ -63,10 +58,6 @@
 		}
   }
 }
-
-
-
-
 
 .hito-content{
   &::before{
@@ -121,22 +112,12 @@
 
 }
 
-
-// .swiper {
-//   width: 600px;
-//   height: 300px;
-// }
-
-
-
-
-.swiper {
+.swiper{
   width: 100%;  
   height:auto;
 
-  &-slide {
+  &-slide{
     text-align: center;
-  
     font-size: 18px;
     background: transparent;
     display: flex;
@@ -144,7 +125,7 @@
     align-items: center;
   }
 
-  &-slide img {
+  &-slide img{
     display: block;
     width: 100%;
     height: 100%;
@@ -152,9 +133,6 @@
   }
 
 }
-
-
-
 
 .outline{
   width: 80px;
@@ -164,45 +142,21 @@
   margin: 15px 10px;
 }
 
+.hots{
 
-
-
-
-
-.hots-tag{
-  margin-top: 16px;
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @include pad{
-    padding: 8px;
-    flex-direction: column;
+  &-tag{
+    margin-top: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    @include pad{
+      padding: 8px;
+      flex-direction: column;
+    }
   }
 }
-
-
-.life-title{
-  font-size: 52px;
-  @include pad{
-    font-size: 40px;
-  }
-
-}
-
-.life-list{
-  color: #343A40;
-  font-size: 20px;
-  font-weight: bolder;
-
-
-  @include pad{
-    font-size: 16px;
-    font-weight: bold;
-  }
-}
-
 
 .list-group-item-action{
   border: 0px;
@@ -214,10 +168,27 @@
   color: #212529 !important; 
 }
 
+.life{
 
-
-
-
+  &-title{
+    font-size: 52px;
+  
+    @include pad{
+      font-size: 40px;
+    }
+  }
+  
+  &-list{
+    color: #343A40;
+    font-size: 20px;
+    font-weight: bolder;
+  
+    @include pad{
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
 
 .bg-linear-gradient{
   background: linear-gradient(180deg, transparent 0, #212529 100%);
