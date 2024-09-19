@@ -60,6 +60,7 @@
 }
 
 .hito-content{
+
   &::before{
     content: "";
     display: block;
@@ -84,6 +85,14 @@
     right: -20px;
     bottom: 0;
     background:url("../images/bg-2.png") ;
+
+    @include pad{
+      width: 160px;
+      height: 104px;
+      right: -10px;
+      bottom: 0;
+      background:url("../images/bg-2-sm.png") ;
+    }
   }
 
   .content-title{
@@ -92,7 +101,6 @@
     font-weight: 900;
     color: #6E6B67;
     margin-bottom: 20px;
-
     @include pad{
       font-size: 16px;
       font-weight: 700;
@@ -101,13 +109,25 @@
     }
   }
 
-  .content-list{
-    width: 30%;
-    margin: 0 auto;
+  // ul畫面致中的寫法，假設content-list為div且是ul的父層
+  // .content-list {
+  //   text-align: center;
+  // }
+  // .content-list ul { //可以在父層設定 text-align，並修改 ul 的 display 狀態為 inline-block
+  //     display: inline-block;
+  // }
 
-    @include pad{
-      width: 50%;
-    }
+  .content-list{
+    // width: 30%;
+    // margin: 0 auto;
+    
+    // @include pad{
+    //   width: 75%;
+    // }
+
+    // ul畫面致中的寫法 可以利用 margin: 0 auto 以及 display:table 調整 ul
+    display: table;
+    margin: 0 auto;
   }
 
 }
